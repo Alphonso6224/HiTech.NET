@@ -65,23 +65,17 @@
             <div class="col-9">
                 <div class="tab-content" id="v-pills-tabContent">
 
-                    <!-- Fichier product.html -->
+                    <!-- Fichier product-empty.html -->
                     <div class="tab-pane fade show active" id="v-pills-products" role="tabpanel"
                         aria-labelledby="v-pills-products-tab">
 
                         <div class="d-flex justify-content-between p-5 ">
+                            <!-- Bouton Annuler les modifications -->
                             <button type="button" class="btn btn-outline-secondary font-weight-bold">
                                 <i class="bi bi-x"></i>
                                 Annuler les modifications
                             </button>
-
-                            <!-- <form class="form-inline">
-                                <div class="form-group mx-sm-3 mb-2">
-                                    <input type="text" class="form-control" placeholder="...">
-                                </div>
-                                <button type="submit" class="btn btn-outline-primary mb-2">Rechercher</button>
-                            </form> -->
-
+                            <!-- Bouton Valider et enregistrer la fiche-->
                             <button type="button" class="btn btn-primary font-weight-bold">
                                 <i class="bi bi-check-lg font-weight-bold"></i>
                                 Valider et enregistrer la fiche
@@ -95,30 +89,30 @@
                                                      Gestion
                                   -------------------------------------------------->
                                 <fieldset class="form-group bg-light p-4">
-                                    <legend class="col-form-label font-weight-bold ">Gestion</legend>
+                                    <legend class="col-form-label font-weight-bold"><h3>Gestion</h3></legend>
                                     <!-- Statut -->
                                     <fieldset class="form-group">
                                         <div class="row mb-3">
-                                            <legend class="col-form-label font-weight-bold col-sm-2 pt-0">Statut</legend>
+                                            <legend class="col-form-label col-sm-2 pt-0 font-weight-bold">Statut</legend>
                                             <div class="col-sm-10">
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="radio" name="gridRadios"
                                                         id="gridRadios1" value="option1" checked>
-                                                    <label class="form-check-label" for="gridRadios1">
+                                                    <label class="form-check-label font-weight-bold text-secondary" for="gridRadios1">
                                                         En attente de mise en ligne
                                                     </label>
                                                 </div>
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="radio" name="gridRadios"
                                                         id="gridRadios2" value="option2">
-                                                    <label class="form-check-label" for="gridRadios2">
+                                                    <label class="form-check-label font-weight-bold text-success" for="gridRadios2">
                                                         En boutique
                                                     </label>
                                                 </div>
                                                 <div class="form-check disabled">
                                                     <input class="form-check-input" type="radio" name="gridRadios"
                                                         id="gridRadios3" value="option3" disabled>
-                                                    <label class="form-check-label" for="gridRadios3">
+                                                    <label class="form-check-label font-weight-bold text-danger" for="gridRadios3">
                                                         Retiré
                                                     </label>
                                                 </div>
@@ -126,7 +120,7 @@
                                         </div>
                                         <!-- Boutique -->
                                         <div class="form-group row mb-3">
-                                            <label for="boutique" class="col-sm-2 col-form-label">Boutique</label>
+                                            <label for="boutique" class="col-sm-2 col-form-label font-weight-bold">Boutique</label>
                                             <div class="col-sm-10">
                                                 <select class="form-control" id="boutique">
                                                     <option>Choisir une boutique ...</option>
@@ -140,7 +134,7 @@
                                         </div>
                                         <!-- rayon -->
                                         <div class="form-group row">
-                                            <label for="rayon" class="col-sm-2 col-form-label">Rayon</label>
+                                            <label for="rayon" class="col-sm-2 col-form-label font-weight-bold">Rayon</label>
                                             <div class="col-sm-10">
                                                 <select class="form-control" id="rayon">
                                                     <option>Choisir un rayon ...</option>
@@ -166,17 +160,17 @@
                                                      Présentatiion
                                   -------------------------------------------------->
                                 <fieldset class="form-group bg-light p-4">
-                                    <legend class="col-form-label font-weight-bold">Présentation</legend>
+                                    <legend class="col-form-label font-weight-bold"><h3>Présentation</h3></legend>
                                     <!-- Marque -->
                                     <div class="form-group row mb-3">
-                                        <label for="marque" class="col-sm-2 col-form-label">Marque</label>
+                                        <label for="marque" class="col-sm-2 col-form-label font-weight-bold">Marque</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="marque" value="#">
                                         </div>
                                     </div>
                                     <!-- Référence du produit -->
                                     <div class="form-group row mb-3">
-                                        <label for="reference" class="col-sm-2 col-form-label">Référence du
+                                        <label for="reference" class="col-sm-2 col-form-label font-weight-bold">Référence du
                                             produit</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="reference" value="#">
@@ -184,34 +178,34 @@
                                     </div>
                                     <!-- Etiquettes -->
                                     <div class="form-group row mb-3">
-                                        <label for="etiquette" class="col-sm-2 col-form-label">Etiquettes</label>
+                                        <label for="etiquette" class="col-sm-2 col-form-label font-weight-bold">Etiquettes</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="etiquette" value="#">
                                         </div>
                                     </div>
                                     <!-- Prix -->
                                     <div class="form-group row mb-3">
-                                        <label for="prix" class="col-sm-2 col-form-label">Prix</label>
+                                        <label for="prix" class="col-sm-2 col-form-label font-weight-bold">Prix</label>
                                         <div class="col-sm-10">
                                             <div class="input-group mb-2 mr-sm-2">
                                                 <div class="input-group-prepend">
-                                                    <div class="input-group-text">Price</div>
+                                                    <div class="input-group-text font-weight-bold">Price</div>
                                                 </div>
                                                 <input type="text" class="form-control" id="prix" placeholder="#">
                                                 <div class="input-group-prepend">
-                                                    <div class="input-group-text">£</div>
-                                                    <div class="input-group-text">éco-participation</div>
+                                                    <div class="input-group-text font-weight-bold">£</div>
+                                                    <div class="input-group-text font-weight-bold">éco-participation</div>
                                                 </div>
                                                 <input type="text" class="form-control" id="prix" placeholder="#">
                                                 <div class="input-group-prepend">
-                                                    <div class="input-group-text">£</div>
+                                                    <div class="input-group-text font-weight-bold">£</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Description principale (MarkDown) -->
                                     <div class="form-group row mb-3">
-                                        <label for="description" class="col-sm-2 col-form-label">Description principale
+                                        <label for="description" class="col-sm-2 col-form-label font-weight-bold">Description principale
                                             (MarkDown)</label>
                                         <div class="col-sm-10">
                                             <textarea name="#" class="form-control" id="description" cols="30"
@@ -224,44 +218,44 @@
                                                      Photo
                                   -------------------------------------------------->
                                 <fieldset class="form-group bg-light p-4">
-                                    <legend class="col-form-label font-weight-bold">Photo</legend>
+                                    <legend class="col-form-label font-weight-bold"><h3>Photo</h3></legend>
                                     <!-- Photo 1 -->
                                     <div class="form-group row mb-3">
-                                        <label for="customFile-1" class="col-sm-2 col-form-label">Photo 1</label>
+                                        <label for="customFile-1" class="col-sm-2 col-form-label font-weight-bold">Photo 1</label>
                                         <div class="col-sm-10">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="customFile-1">
-                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                                <label class="custom-file-label font-weight-bold" for="customFile">Choose file</label>
                                               </div>
                                         </div>
                                     </div>
                                     <!-- Photo 2 -->
                                     <div class="form-group row mb-3">
-                                        <label for="customFile-2" class="col-sm-2 col-form-label">Photo 2</label>
+                                        <label for="customFile-2" class="col-sm-2 col-form-label font-weight-bold">Photo 2</label>
                                         <div class="col-sm-10">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="customFile-2">
-                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                                <label class="custom-file-label font-weight-bold" for="customFile">Choose file</label>
                                               </div>
                                         </div>
                                     </div>
                                     <!-- Photo 3 -->
                                     <div class="form-group row mb-3">
-                                        <label for="customFile-3" class="col-sm-2 col-form-label">Photo 3</label>
+                                        <label for="customFile-3" class="col-sm-2 col-form-label font-weight-bold">Photo 3</label>
                                         <div class="col-sm-10">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="customFile-3">
-                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                                <label class="custom-file-label font-weight-bold" for="customFile">Choose file</label>
                                               </div>
                                         </div>
                                     </div>
                                     <!-- Photo 4 -->
                                     <div class="form-group row mb-3">
-                                        <label for="customFile-4" class="col-sm-2 col-form-label">Photo 4</label>
+                                        <label for="customFile-4" class="col-sm-2 col-form-label font-weight-bold">Photo 4</label>
                                         <div class="col-sm-10">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="customFile-4">
-                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                                <label class="custom-file-label font-weight-bold" for="customFile">Choose file</label>
                                               </div>
                                         </div>
                                     </div>
@@ -271,27 +265,27 @@
                                                      Descriptif 1
                                   -------------------------------------------------->
                                 <fieldset class="form-group bg-light p-4">
-                                    <legend class="col-form-label font-weight-bold">Descriptif 1</legend>
+                                    <legend class="col-form-label font-weight-bold display-1"><h3>Descriptif 1</h3></legend>
                                     <!-- Titre -->
                                     <div class="form-group row mb-3">
-                                        <label for="titre" class="col-sm-2 col-form-label">Titre</label>
+                                        <label for="titre" class="col-sm-2 col-form-label font-weight-bold">Titre</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="titre" value="#">
                                         </div>
                                     </div>
                                     <!-- Image -->
                                     <div class="form-group row mb-3">
-                                        <label for="imgFile" class="col-sm-2 col-form-label">Image</label>
+                                        <label for="imgFile" class="col-sm-2 col-form-label font-weight-bold">Image</label>
                                         <div class="col-sm-10">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="imgFile">
-                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                                <label class="custom-file-label font-weight-bold" for="customFile">Choose file</label>
                                               </div>
                                         </div>
                                     </div>
                                     <!-- Texte -->
                                     <div class="form-group row mb-3">
-                                        <label for="texte-1" class="col-sm-2 col-form-label">Texte</label>
+                                        <label for="texte-1" class="col-sm-2 col-form-label font-weight-bold">Texte</label>
                                         <div class="col-sm-10">
                                             <textarea name="#" class="form-control" id="Texte-1" cols="30"
                                                 rows="10"></textarea>
@@ -303,27 +297,27 @@
                                                      Descriptif 2
                                   -------------------------------------------------->
                                 <fieldset class="form-group bg-light p-4">
-                                    <legend class="col-form-label font-weight-bold">Descriptif 2</legend>
+                                    <legend class="col-form-label font-weight-bold"><h3>Descriptif 2</h3></legend>
                                     <!-- Titre -->
                                     <div class="form-group row mb-3">
-                                        <label for="titre-2" class="col-sm-2 col-form-label">Titre</label>
+                                        <label for="titre-2" class="col-sm-2 col-form-label font-weight-bold">Titre</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="titre-2" value="#">
                                         </div>
                                     </div>
                                     <!-- Image -->
                                     <div class="form-group row mb-3">
-                                        <label for="imgFile-2" class="col-sm-2 col-form-label">Image</label>
+                                        <label for="imgFile-2" class="col-sm-2 col-form-label font-weight-bold">Image</label>
                                         <div class="col-sm-10">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="imgFile-2">
-                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                                <label class="custom-file-label font-weight-bold" for="customFile">Choose file</label>
                                               </div>
                                         </div>
                                     </div>
                                     <!-- Texte -->
                                     <div class="form-group row mb-3">
-                                        <label for="texte-2" class="col-sm-2 col-form-label">Texte</label>
+                                        <label for="texte-2" class="col-sm-2 col-form-label font-weight-bold">Texte</label>
                                         <div class="col-sm-10">
                                             <textarea name="#" class="form-control" id="Texte-2" cols="30"
                                                 rows="10"></textarea>
@@ -335,27 +329,27 @@
                                                      Descriptif 3
                                   -------------------------------------------------->
                                 <fieldset class="form-group bg-light p-4">
-                                    <legend class="col-form-label font-weight-bold">Descriptif 3</legend>
+                                    <legend class="col-form-label font-weight-bold"><h3>Descriptif 3</h3></legend>
                                     <!-- Titre -->
                                     <div class="form-group row mb-3">
-                                        <label for="titre-3" class="col-sm-2 col-form-label">Titre</label>
+                                        <label for="titre-3" class="col-sm-2 col-form-label font-weight-bold">Titre</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="titre-3" value="#">
                                         </div>
                                     </div>
                                     <!-- Image -->
                                     <div class="form-group row mb-3">
-                                        <label for="imgFile-3" class="col-sm-2 col-form-label">Image</label>
+                                        <label for="imgFile-3" class="col-sm-2 col-form-label font-weight-bold">Image</label>
                                         <div class="col-sm-10">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="imgFile-3">
-                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                                <label class="custom-file-label font-weight-bold" for="customFile">Choose file</label>
                                               </div>
                                         </div>
                                     </div>
                                     <!-- Texte -->
                                     <div class="form-group row mb-3">
-                                        <label for="texte-2" class="col-sm-2 col-form-label">Texte</label>
+                                        <label for="texte-2" class="col-sm-2 col-form-label font-weight-bold">Texte</label>
                                         <div class="col-sm-10">
                                             <textarea name="#" class="form-control" id="Texte-2" cols="30"
                                                 rows="10"></textarea>
